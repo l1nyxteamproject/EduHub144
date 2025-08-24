@@ -1,0 +1,101 @@
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduHub144 — Главная</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Import map (reserved if more libraries are added) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "nipplejs": "https://cdn.jsdelivr.net/npm/nipplejs@0.9.1/dist/nipplejs.min.js"
+    }
+  }
+  </script>
+</head>
+<body class="light">
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Перейти на главную">
+        <img src="asset_logo.png" alt="Логотип EduHub144" class="logo">
+        <div class="brand-text">
+          <div class="site-name">EduHub144</div>
+          <div class="site-tag">Ваш образовательный ресурс</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Главное меню">
+        <button class="nav-btn" data-target="about" id="btn-about">О нас</button>
+        <button class="nav-btn" data-target="contacts" id="btn-contacts">Контакты</button>
+      </nav>
+
+      <!-- mobile menu toggle (visible only on small screens) -->
+      <button id="menu-toggle" class="icon-btn mobile-only" aria-expanded="false" aria-label="Открыть меню">Меню</button>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="icon-btn" aria-pressed="false" title="Переключить тему">
+          Тема
+        </button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1 class="hero-title">Ваш источник проверенных методических материалов для школы.</h1>
+      <p class="hero-sub">EduHub144 — материалы для педагогов и учеников, курсы и сообщество.</p>
+    </div>
+  </header>
+
+  <main class="layout" id="main" role="main">
+    <section class="content-grid">
+      <div class="left-col">
+        <div class="panel" id="home-panel">
+          <h2>Добро пожаловать в EduHub144</h2>
+          <div class="panel-body">
+            <p class="muted">Здесь вы найдёте проверённые методические материалы, курсы и ресурсы для обучения.</p>
+            <a class="primary-btn" href="articles.html">НАЧАТЬ ОБУЧАТЬСЯ</a>
+          </div>
+        </div>
+
+        <div class="panel hidden" id="about-panel" aria-hidden="true">
+          <h2>О нас</h2>
+          <div class="panel-body">
+            <p>EduHub144 — это информационный ресурс и образовательная платформа, посвященная школьному образованию. Мы специализируемся на предоставлении высококачественных методических материалов для педагогов и углубленных курсов для учеников.</p>
+
+            <h3>Наши цели:</h3>
+            <ul>
+              <li>Повышение профессионального уровня педагогов.</li>
+              <li>Поддержка учеников в достижении высоких образовательных результатов.</li>
+              <li>Создание активного образовательного сообщества.</li>
+            </ul>
+
+            <p>Мы работаем для того, чтобы сделать обучение более эффективным и доступным.</p>
+
+            <a class="primary-btn" href="articles.html">НАЧАТЬ ОБУЧАТЬСЯ</a>
+          </div>
+        </div>
+
+        <div class="panel hidden" id="contacts-panel" aria-hidden="true">
+          <h2>Контакты</h2>
+          <div class="panel-body">
+            <p>Связаться с нами можно в телеграмме:</p>
+            <div class="contacts-buttons">
+              <a class="contact-btn" href="https://t.me/l1nyx_nobek" target="_blank" rel="noopener noreferrer">главный разработчик проекта</a>
+              <a class="contact-btn" href="https://t.me/VasyaMartynov" target="_blank" rel="noopener noreferrer">Администратор проекта</a>
+            </div>
+
+            <a class="primary-btn" href="articles.html">НАЧАТЬ ОБУЧАТЬСЯ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
